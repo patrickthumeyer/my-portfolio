@@ -9655,5 +9655,8 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.card-img {
+  width: 50px;
+}
 
 /*# sourceMappingURL=main.css.map */
