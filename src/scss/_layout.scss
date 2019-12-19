@@ -17,10 +17,12 @@ body {
 
 .card {
   transition: 0.3s;
+  box-shadow: 3px 3px 8px rgb(145, 145, 145);
 }
 .card:hover {
   transition: 0.3s;
-  transform: scale(1.05);
+  transform: scale(0.99);
+  box-shadow: none;
 }
 
 .headline {
@@ -30,18 +32,25 @@ body {
 .headline::before {
   content: "";
   display: block;
-  width: 140%;
+  width: 100%;
   height: 2px;
   background-color: rgb(199, 199, 199);
   position: absolute;
   top: -40px;
-  left: -200px;
+  left: -0px;
+  overflow: hidden;
 }
 
 .passfoto {
-  width: 330px;
+  width: 300px;
   border: 7px solid $primary;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.passfoto:hover {
+  transition: 0.3s;
+  border: 11px solid rgb(161, 26, 26);
 }
 
 .card-body {
@@ -51,11 +60,11 @@ body {
 .social i {
   font-size: 50px;
   color: $primary;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .social a:hover i {
-  //   transform: rotateY(360deg);
-  transition: 0.6s;
-  color: rgb(185, 15, 15);
+  // transform: rotateY(360deg);
+  transition: 0.3s;
+  color: rgb(179, 28, 28);
 }
