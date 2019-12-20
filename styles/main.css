@@ -404,13 +404,13 @@ h6, .h6 {
 }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -9670,11 +9670,13 @@ body {
 
 .card {
   transition: 0.3s;
+  box-shadow: 3px 3px 8px #919191;
 }
 
 .card:hover {
   transition: 0.3s;
-  transform: scale(1.05);
+  transform: scale(0.99);
+  box-shadow: none;
 }
 
 .headline {
@@ -9694,20 +9696,63 @@ body {
 }
 
 .passfoto {
-  width: 330px;
+  width: 300px;
   border: 7px solid #991c13e3;
   border-radius: 50%;
+  transition: 0.3s;
+}
+
+.passfoto:hover {
+  transition: 0.3s;
+  border: 11px solid #a11a1a;
 }
 
 .social i {
   font-size: 50px;
   color: #991c13e3;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .social a:hover i {
-  transition: 0.6s;
-  color: #b90f0f;
+  transition: 0.3s;
+  color: #b31c1c;
+}
+
+.text-section {
+  position: relative;
+  color: black;
+}
+
+.text-section:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 100%;
+  transition: 0.3s;
+  z-index: 1;
+  color: white;
+}
+
+.text-section:hover:before {
+  background-image: linear-gradient(to right, #c31432, #240b36);
+  width: 100%;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.text-section:hover {
+  color: white;
+}
+
+.card-body {
+  z-index: 10;
+}
+
+.btn {
+  z-index: 10;
 }
 
 /*# sourceMappingURL=main.css.map */
